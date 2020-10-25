@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+}
+
+.header {
+    height: 40vh;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-position-y: center;
+}
+
+.titulo {
+    font-style: normal;
+    font-size: 6vw;
+    font-weight: 900;
+    color: black;
+    text-shadow: 0 0 3px #ff5100, 0 0 5px #fbff01;
+}
+
+.parrafo {
+    text-align: justify;
+}
+
+.padding {
+    padding-top: 80px;
+}
+
+.icon {
+    font-size: 90px;
+}
+
+.icon:hover {
+    transform: scale(1.7) rotate(-5deg);
+    transition-duration: 700ms;
+    opacity: 0.9;
+    transition-timing-function: ease-in-out;
+    -webkit-transform: scale(1.7) rotate(-5deg);
+    -moz-transform: scale(1.7) rotate(-5deg);
+    -ms-transform: scale(1.7) rotate(-5deg);
+    -o-transform: scale(1.7) rotate(-5deg);
+}
+
+.imagen {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.subrayar {
+    text-decoration: underline;
+}
+
+.imagen:hover {
+    transform: scale(1.5);
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    opacity: 0.7;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+.shadow {
+    /*
+        box-shadow : sombra H sombra V desenfoque color
+    */
+    box-shadow: 12px 12px 10px rgb(0, 0, 0, 0.9);
+    -moz-box-shadow: 12px 12px 10px rgb(0, 0, 0, 0.9);
+    -o-box-shadow: 12px 12px 10px rgb(0, 0, 0, 0.9);
+    -ms-box-shadow: 12px 12px 10px rgb(0, 0, 0, 0.9);
+    -webkit-box-shadow: 12px 12px 10px rgb(0, 0, 0, 0.9);
+}
+
+.frase {
+    background: rgb(250, 107, 11);
+    height: auto;
+}
+
+.frase-texto {
+    color: ghostwhite;
+}
+
+.footer {
+    color: ghostwhite;
+    height: 200px;
+    background-color: rgb(194, 79, 2);
+}
+
+textarea {
+    resize: none;
+}
+
+.fondo {
+    background-color: black;
+}
+
+.cajaLoca {
+    position: relative;
+    left: 0px;
+    animation-name: caja;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes caja {
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: 100px;
+    }
+    100% {
+        left: 0px;
+    }
+}
